@@ -9,6 +9,7 @@
 <script>
 $(function(){
 	$.ajax({
+		type: "post",
 		url:"background.do",
 		success: function(dto){
 			$("#result").html("상품명:"+dto.name+", 가격:"+dto.price);
